@@ -5,22 +5,28 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="header">
+    <div class="menuBar" id="menuBarId">
+        <strong class="menuText" id="menuTextId"><a href="./index.html">Home</a></strong>
+        
+    </div>
+    
+    <div class="header" id="headerId">
+        <div>
         <img class="logo" src="./img/munamii.gif " alt="Munamii Webshop">
-            <div class="imageBox">
-                <img class="menu"src="./img/menu2.png" alt="Menu">
-                <img class="menuMouseOver"src="./img/menu.png" alt="Menu">
+            <div class="imageBox" id="imageBoxId">
+                <img class="menu" id="menuInactiveID" src="./img/menu2.png" alt="Menu" onmousedown="menuActive()">
+                <img class="menuMouseOver" id="menuActiveID" src="./img/menu.png" alt="Menu" onmousedown="menuActive()">
             </div>
-        <div class="headerText">
-            Textstyle="z-index:
+        <div class="headerText" class="headerTextId">
+            Home
         </div>
     </div>
-    <div class="main">
-
+    <div class="main" id="mainId">
+Text
     </div>
     <div class="footer">
     </div>
-
+    <!-- <td><button onclick="addCar(brand, model, year)">Add</button></td> -->
 
         <!-- <div class="menu">English</div>
         <div class="menu">Maths</div>
