@@ -1,10 +1,21 @@
 var active = false;
 const menuTopSize = '30px';
 const menuTextTopSize = '2px';
-var doubleSpaceInText = "&nbsp;&nbsp;";
-const menu = ["<a href='./index.html'>Home</a>", "<a href='./index.html'>Products</a>", "<a href='./Contacts.html'>Contacts</a>", "<a href='./about.html'>About Us</a>"];
+const doubleSpaceInText = "&nbsp;&nbsp;";
+//<div class='menuBar' id='menuBarId'></div>
+const menuBar = "<strong class='menuText' id='menuTextId'>";
+const menu = ["<a href='./index.html'>Home</a>", "<a href='./products.html'>Products</a>", "<a href='./Contacts.html'>Contacts</a>", "<a href='./about.html'>About Us</a>"];
+const menuBarEnd = "</strong>";
 
-function onLoad(){
+const header = ["<div><img class='logo' src='./img/munamii.gif' alt='Munamii Webshop'>",
+                "<div class='imageBox' id='imageBoxId'>",
+                "<img class='menu' id='menuInactiveID' src='./img/menu2.png' alt='Menu' onmousedown='menuActive()'>",
+                "<img class='menuMouseOver' id='menuActiveID' src='./img/menu.png' alt='Menu' onmousedown='menuActive()'>",
+                "</div><div class='headerText' class='headerTextId'>Welcome to Munamii cakery</div>"];
+
+function onLoadPage(){
+    createHeader();
+    createFooter();
 
 }
 // // let cars=[];
@@ -18,15 +29,24 @@ function onLoad(){
 //     document.getElementById('headerTextId').innerHTML = "Homecoming";
 // }
 
-function createFooter(){
-
-}
-
 function createHeader(){
+
+    let result="";
+//    result +=  menuBar + menuBarEnd;
     
+    for(let i = 0; i < header.length; i++){
+        result += header[i];
+    }
+        document.getElementById("headerId").innerHTML = result;
+//        alert(result);        
 }
+
+function createFooter(){
+}
+
 function menuActive(){
     if(active == true){
+alert("test");
         document.getElementById("headerId").style.top = '0px';
         document.getElementById("imageBoxId").style.top = '0px';
         //        document.getElementById("headerId").innerHTML = "red";
@@ -45,38 +65,4 @@ function menuActive(){
         }
   }
   
-   
-// function addCar(brand, model, year){
-//     cars.push({
-//         brand: brand.value,
-//         model: model.value,
-//         year: year.value
-//     });
-
-//     loadMyCar();
-//     brand.value="";
-//     model.value="";
-//     year.value="";
-// }
-
-// function loadMyCar(){
-//     let result="";
-
-//     result +="<tr>";
-//     result +="<th>Brand</th>";
-//     result +="<th>Model</th>";
-//     result +="<th>Year</th>";
-//     result +="</tr>";
-
-//     for(let i =0; i < cars.length; i++){
-//         result +="<tr>";
-//         result +="<td>" + cars[i].brand + "</td>";
-//         result +="<td>" + cars[i].model + "</td>";
-//         result +="<td>" + cars[i].year + "</td>";
-//         result +="</tr>";
-
-//     }
-//     result += "<h3>Totally " + cars.length + " Cars</h3>";
-//     document.getElementById("carTable").innerHTML = result;
-
-// }
+ 
