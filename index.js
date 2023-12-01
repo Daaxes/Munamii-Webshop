@@ -4,14 +4,32 @@ const menuTextTopSize = '2px';
 const doubleSpaceInText = "&nbsp;&nbsp;";
 //<div class='menuBar' id='menuBarId'></div>
 const menuBar = "<strong class='menuText' id='menuTextId'>";
+
 const menu = ["<a href='./index.html'>Home</a>", "<a href='./products.html'>Products</a>", "<a href='./Contacts.html'>Contacts</a>", "<a href='./about.html'>About Us</a>"];
 const menuBarEnd = "</strong>";
 
-const header = ["<div><img class='logo' src='./img/munamii.gif' alt='Munamii Webshop'>",
-                "<div class='imageBox' id='imageBoxId'>",
-                "<img class='menu' id='menuInactiveID' src='./img/menu2.png' alt='Menu' onmousedown='menuActive()'>",
-                "<img class='menuMouseOver' id='menuActiveID' src='./img/menu.png' alt='Menu' onmousedown='menuActive()'>",
-                "</div><div class='headerText' class='headerTextId'>Welcome to Munamii cakery</div>"];
+const MenuIcons = ["<img class='menu' id='menuInactiveID' src='./img/menu2.png' alt='Menu'>", 
+                   "<img class='menuMouseOver' id='menuActiveID' src='./img/menu.png' alt='Menu' onmousedown='showMenu()'>"];
+
+const header   =  ["<div><img class='logo' src='./img/munamii.gif' alt='Munamii Webshop'>",
+                   "<div class='imageBox' id=imageBoxId'>",
+                      "<img class='menu' id='menuInactiveID' src='./img/menu2.png' alt='Menu'>",
+                      "<img class='menuMouseOver' id='menuActiveID' src='./img/menu.png' alt='Menu'onmousedown='showMenu()'>",
+                         "<div id='myDropdown' class='dropdown-content'>"];
+
+const headerMenuLink = ["<a href='./index.html' target='_self'>Home</a>",
+                        "<a href='./products.html' target='_self'>Products</a>",
+                        "<a href='./contacts.html' target='_self'>Contact</a>",
+                        "<a href='./about.html' target='_self',>About us</a>",
+                        "<a href='./newSide.html' target='_self',>newSide</a>"];
+                        
+const headerEnd = "</div></div></div>";                      
+
+// const header = ["<div><img class='logo' src='./img/munamii.gif' alt='Munamii Webshop'>",
+//                 "<div class='imageBox' id='imageBoxId'>",
+//                 "<img class='menu' id='menuInactiveID' src='./img/menu2.png' alt='Menu' onmousedown='menuActive()'>",
+//                 "<img class='menuMouseOver' id='menuActiveID' src='./img/menu.png' alt='Menu' onmousedown='menuActive()'>",
+//                 "</div><div class='headerText' class='headerTextId'>Welcome to Munamii cakery</div>"];
 
 function onLoadPage(){
     createHeader();
@@ -29,16 +47,43 @@ function onLoadPage(){
 //     document.getElementById('headerTextId').innerHTML = "Homecoming";
 // }
 
+//function myFunction() {
+function showMenu() {
+        document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+//    if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches('.menuMouseOver')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
 function createHeader(){
 
     let result="";
 //    result +=  menuBar + menuBarEnd;
     
-    for(let i = 0; i < header.length; i++){
-        result += header[i];
-    }
-        document.getElementById("headerId").innerHTML = result;
-//        alert(result);        
+  header.forEach((element)=>{
+    result += element;
+  });
+  headerMenuLink.forEach((element)=>{
+    result += element;
+  });
+  result += headerEnd;
+  
+document.getElementById("headerId").innerHTML = result;
+//  alert(result);
+
+
 }
 
 function createFooter(){
