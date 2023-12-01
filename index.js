@@ -22,6 +22,9 @@ function createFooter(){
 
 }
 
+function createHeader(){
+    
+}
 function menuActive(){
     if(active == true){
         document.getElementById("headerId").style.top = '0px';

@@ -7,6 +7,45 @@
     flex-direction: column; 
     }
 
+    img.logo{
+        max-width: 140px;
+        height: auto;
+        width: auto;
+        border-radius: 50%;
+        margin-top: 1%;
+        margin-left: 1%
+        }
+    
+        img.menu {
+            right: 20px;
+            top: 20px;
+            position: absolute; 
+        }
+
+        img.menuMouseOver {
+             right: 20px;
+            top: 20px;
+            position: absolute; 
+        }
+    
+    .imageBox {
+            right: 20px;
+            top: 20px;
+            position: absolute;
+            float: left;
+        }
+    
+    .imageBox .menuMouseOver{
+            position: absolute; 
+            right: 20px;
+            top: 20px;
+            display: none;
+        }
+    
+    .imageBox:hover .menuMouseOver {
+            display: block;
+        }
+    
     .menuBar{
         background-color: goldenrod;
     }
@@ -21,7 +60,7 @@
     }
 
     a:visited{
-    color:white;
+    color:black;
     }
     header {
     position: relative;
@@ -33,7 +72,6 @@
 
     .header{
     background-color: #3aa58e;
-    font-family:cursive;
     height: 165px;
     width: 100%;
     border: 3px solid #050505;
@@ -48,7 +86,9 @@
     left: 80px;
     top: 65px;
     padding: 5px 7% 0% 7%;
-    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
     position:fixed;
     }
 
@@ -72,39 +112,6 @@
     font-weight: bolder;
     margin-top: 10px;
     margin-bottom: 100px;
-    }
-
-    img.logo{
-    max-width: 140px;
-    height: auto;
-    width: auto;
-    border-radius: 50%;
-    margin-top: 1%;
-    margin-left: 1%
-    }
-
-    img.menu {
-        right: 20px;
-        top: 20px;
-        position: absolute; 
-    }
-
-    .imageBox {
-        right: 20px;
-        top: 20px;
-        position: absolute;
-        float: left;
-    }
-
-    .imageBox .menuMouseOver{
-        position: absolute; 
-        right: 20px;
-        top: 20px;
-        display: none;
-    }
-
-    .imageBox:hover .menuMouseOver {
-        display: block;
     }
 
     .foot {
