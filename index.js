@@ -20,8 +20,8 @@ const header   =  ["<div><img class='logo' src='./img/munamii.gif' alt='Munamii 
 const headerMenuLink = ["<a href='./index.html' target='_self'>Home</a>",
                         "<a href='./products.html' target='_self'>Products</a>",
                         "<a href='./contacts.html' target='_self'>Contact</a>",
-                        "<a href='./about.html' target='_self',>About us</a>",
-                        "<a href='./newSide.html' target='_self',>newSide</a>"];
+                        "<a href='./about.html' target='_self'>About us</a>",
+                        "<a href='./newSide.html' target='_self'>newSide</a>"];
                         
 const headerEnd = "</div></div></div>";                      
 
