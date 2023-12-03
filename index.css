@@ -166,6 +166,9 @@
     }
     /* Styles for screens with a minimum width of 1025px (e.g., desktop computers) */
     @media screen and (min-width: 1025px) {
+        .dropdown-content a{
+            font-size: 20px;
+        }
         body {
             font-size: 20px;
         }
@@ -174,19 +177,16 @@
     /* Styles for screens with a maximum width of 600px (e.g., mobile devices) */
     @media screen and (max-width: 600px) {
         body {
-            font-size: 8px;
+            font-size: 40px;
         }
-        .dropdown-content{
-            font-size: 25px;
-        }
+        .dropdown-content a{
+            font-size: 40px;
+       }
         .headerText{
-            font-size: 8px;
+            font-size: 40px;
         }
         h2{
             margin-top: 5px;
             margin-bottom: 5px;
-        }
-        table {
-            width: 90%; /* Adjust the width for smaller screens */
         }
     }
