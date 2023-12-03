@@ -160,34 +160,33 @@
 
     /* Styles for screens with a minimum width of 601px and a maximum width of 1024px (e.g., tablets) */
     @media screen and (min-width: 601px) and (max-width: 1024px) {
-    .dropdown-content{
-        font-size: 16px;
+        body {
+            font-size: 18px;
+        }
     }
-    .headerText{
-        font-size: 8px;
-    }
-    body {
-    font-size: 18px;
-    }
-    }
-
     /* Styles for screens with a minimum width of 1025px (e.g., desktop computers) */
     @media screen and (min-width: 1025px) {
-    body {
-    font-size: 20px;
-    }
+        body {
+            font-size: 20px;
+        }
     }
 
     /* Styles for screens with a maximum width of 600px (e.g., mobile devices) */
     @media screen and (max-width: 600px) {
-    body {
-    font-size: 8px;
-    }
-    h2{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    }
-    table {
-    width: 90%; /* Adjust the width for smaller screens */
-    }
+        body {
+            font-size: 8px;
+        }
+        .dropdown-content{
+            font-size: 25px;
+        }
+        .headerText{
+            font-size: 8px;
+        }
+        h2{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        table {
+            width: 90%; /* Adjust the width for smaller screens */
+        }
     }
