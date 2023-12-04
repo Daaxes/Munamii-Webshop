@@ -163,6 +163,17 @@
         body {
             font-size: 18px;
         }
+        .dropdown-content a{
+            font-size: 40px;
+       }
+        .headerText{
+            font-size: 40px;
+        }
+        h2{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
     }
     /* Styles for screens with a minimum width of 1025px (e.g., desktop computers) */
     @media screen and (min-width: 1025px) {
