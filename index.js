@@ -32,7 +32,7 @@ function onLoadPage(){
   const Height = window.screen.height;
   //var Width = "Width: " + screenWidth + " Height: " + screenHeight;
   alert(Width);
-  alert(Height);
+  alert(Hscreen.availHeight);
     createHeader();
     createFooter();
 }
