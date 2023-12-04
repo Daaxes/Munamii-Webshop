@@ -28,9 +28,9 @@ const headerMenuLink = ["<a href='./index.html' target='_self'>Home</a>",
 const headerEnd = "</div></div></div>";                      
 
 function onLoadPage(){
-  const Width  = window.screen.width;
-  const Height = window.screen.height;
-  //var Width = "Width: " + screenWidth + " Height: " + screenHeight;
+  const screenWidth  = window.screen.width;
+  const screenHeight = window.screen.height;
+  var Width = "Width: " + screenWidth + " Height: " + screenHeight;
   alert(Width);
   alert(Hscreen.availHeight);
     createHeader();
