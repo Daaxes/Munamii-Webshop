@@ -28,9 +28,12 @@ const headerMenuLink = ["<a href='./index.html' target='_self'>Home</a>",
 const headerEnd = "</div></div></div>";                      
 
 function onLoadPage(){
+  const screenWidth  = window.screen.width;
+  const screenHeight = window.screen.height;
+  var resolution = "Width: " + screenWidth + " Height: " + screenHeight;
+  alert(resolution);
     createHeader();
     createFooter();
-
 }
 
 function showMenu() {
@@ -52,7 +55,7 @@ window.onclick = function(event) {
       }
     }
   }
-
+   
 function createHeader(){
     let result="";
       
@@ -64,7 +67,6 @@ function createHeader(){
     });
       result += headerEnd;
       document.getElementById("headerId").innerHTML = result;
-  //  alert(result);
 }
 
 function createFooter(){
