@@ -15,9 +15,9 @@ const menuIconActive = "<img class='menuMouseOver' id='menuActiveID' src='./img/
 
 const header   =  ["<div><img class='logo' src='./img/munamii.gif' alt='Munamii Webshop'>",
                    "<div class='imageBox' id=imageBoxId'>",
-                      "<img class='menu' id='menuInactiveID' src='./img/menu2.png' alt='Menu'>",
-                      "<img class='menuMouseOver' id='menuActiveID' src='./img/menu.png' alt='Menu'onmousedown='showMenu()'>",
-                         "<div id='myDropdown' class='dropdown-content'>"];
+                   "<img class='menu' id='menuInactiveID' src='./img/menu2.png' alt='Menu'>",
+                   "<img class='menuMouseOver' id='menuActiveID' src='./img/menu.png' alt='Menu'onmousedown='showMenu()'>",
+                   "<div id='myDropdown' class='dropdown-content'>"];
 
 const headerMenuLink = ["<a href='./index.html' target='_self'>Home</a>",
                         "<a href='./products.html' target='_self'>Products</a>",
@@ -31,7 +31,7 @@ function onLoadPage(){
   const screenWidth  = window.screen.width;
   const screenHeight = window.screen.height;
   var Width = "Width: " + screenWidth + " Height: " + screenHeight;
-  alert(Width);
+//  alert(Width);
 //  alert(Hscreen.availHeight);
     createHeader();
     createFooter();

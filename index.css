@@ -27,10 +27,13 @@
             top: 20px;
             position: absolute; 
         }
-    
+    /* not working */
+        .img{
+            max-width: 20px
+        }
     .imageBox {
             right: 10px;
-            top: 20px;
+            top: 32px;
             position: absolute;
             float: left;
         }
@@ -94,56 +97,87 @@
     } */
 
     header {
-    position: relative;
-    width: 100%;
-    background-color:gray;
-    text-align: center; /* Center items vertically */
-    overflow: hidden; /* Clear the floats inside the header */
+        position: relative;
+        width: 100%;
+        background-color:gray;
+        text-align: center; /* Center items vertically */
+        overflow: hidden; /* Clear the floats inside the header */
     }
 
     .header{
-    background-color: #3aa58e;
-    height: 165px;
-    width: 100%;
-    border: 3px solid #050505;
-    z-index: 10;
-    position: fixed;
-    opacity: 100%;
+        background-color: #ffdaba;
+        /* background-color: #FFB777; */
+        /* background-color: #3aa58e; */
+        height: 165px;
+        width: 100%;
+        border: 3px solid #050505;
+        z-index: 10;
+        position: fixed;
+        opacity: 100%;
     }
 
     /*    overflow: hidden; Clear the floats inside the header*/
 
     .headerText{
-    left: 80px;
-    top: 65px;
-    padding: 5px 7% 0% 7%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    position:fixed;
+        left: 80px;
+        top: 65px;
+        padding: 5px 7% 0% 7%;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        position:fixed;
     }
 
     .footer{
-    background-color: #3aa58e;
-    font-family:cursive;
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    bottom: 0px;
-    border-top: solid black 1px;
-    text-align: center;
-    opacity: 100%;
-    z-index: 2;
-    left: 0px;
+        background-color: #ffdaba;
+        /* background-color: #3aa58e; */
+        font-family:cursive;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        bottom: 0px;
+        border-top: solid black 1px;
+        text-align: center;
+        opacity: 100%;
+        z-index: 2;
+        left: 0px;
 
     }
 
     .main{
-    font-size: 50px;
-    font-weight: bolder;
-    margin-top: 10px;
-    margin-bottom: 100px;
+        .img-Gabriella{
+            border-radius: 50%;
+            background-color:#ffdaba;
+            position: fixed;
+            padding: 2em;
+            left: 50%;
+            top: 52%;
+            transform: translate(-50%, -50%);
+        }
     }
+    
+
+    .img-Mail{
+        /* border-radius: 50%; */
+        position: fixed;
+        left: 30px;
+        bottom: 38px;
+    }
+    .img-Facebook{
+        position: fixed;
+        left: 80px;
+        bottom: 38px;
+    }
+    .img-Instagram{
+        position: fixed;
+        left: 130px;
+        bottom: 38px;
+    }
+    .imgbox-Gabriella{
+        position: absolute;
+        display: block;
+        align-items: center;
+    } 
 
     .foot {
         width: 100%;
