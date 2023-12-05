@@ -27,6 +27,13 @@ const headerMenuLink = ["<a href='./index.html' target='_self'>Home</a>",
                         
 const headerEnd = "</div></div></div>";                      
 
+const footerBegins = "<div class='imgbox-SocialMedia'>";
+const footerLinks = ["<a href='mailto'><img class = 'img-Mail' src='./img/mail.png' alt='mail'></a>",
+                     "<a href='https://www.facebook.com/munamiicupcakes/'><img class = 'img-Facebook' src='./img/facebook.png' alt='Facebook'></a>",
+                     "<a href='https://www.instagram.com/munamii.cakery/'><img class = 'img-Instagram' src='./img/instagram.png' alt='Instagram'></a>"];
+const footerEnds =   "</div>";
+
+
 function onLoadPage(){
   const screenWidth  = window.screen.width;
   const screenHeight = window.screen.height;
@@ -71,6 +78,13 @@ function createHeader(){
 }
 
 function createFooter(){
+  let result =  footerBegins;
+
+  footerLinks.forEach((element)=>{
+    result += element;
+  });
+  result += footerEnds;
+  document.getElementById("footerId").innerHTML = result;
 }
 
 // function menuActive(){
