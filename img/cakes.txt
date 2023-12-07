@@ -1,0 +1,47 @@
+ Volume in drive D is MusikPartSSD
+ Volume Serial Number is 26B1-0F9E
+
+ Directory of D:\lexicon\HTML\Munamii Webshop\img
+
+2023-12-05  14:02             2ÿ707 facebook.png
+2023-12-05  14:07             3ÿ711 instagram.png
+2023-12-05  14:01             2ÿ838 mail.png
+2023-12-01  13:41             5ÿ489 menu.png
+2023-12-01  13:39             2ÿ391 menu2.png
+               5 File(s)         17ÿ136 bytes
+
+ Directory of D:\lexicon\HTML\Munamii Webshop\img\Cakes
+
+2023-12-07  14:19            45ÿ537 8-tierFlowerCake.jpg
+2023-12-07  14:04            21ÿ382 Belen.jpg
+2023-12-07  14:02            30ÿ353 Gabriela.jpg
+2023-12-07  14:13            30ÿ704 Green leafs.jpg
+2023-12-07  14:01            40ÿ594 Mr and Mrs.jpg
+2023-12-07  14:08            25ÿ127 The cat.jpg
+2023-12-07  14:00            43ÿ165 Tier rose.jpg
+2023-12-07  14:16            40ÿ900 Tropical.jpg
+2023-12-07  13:59            21ÿ412 White roses.jpg
+
+ Directory of D:\lexicon\HTML\Munamii Webshop\img\Cakes
+
+2023-12-07  14:10           136ÿ060 Elisa.png
+              10 File(s)        435ÿ234 bytes
+
+ Directory of D:\lexicon\HTML\Munamii Webshop\img\Cupcake
+
+2023-12-07  13:44            19ÿ201 Choklate.jpg
+2023-12-07  13:50            31ÿ694 Cobnut.jpg
+2023-12-07  13:53            22ÿ037 Pink delight.jpg
+2023-12-07  13:48            24ÿ263 Red top.jpg
+2023-12-07  13:46            40ÿ997 Turkoise dream.jpg
+2023-12-07  13:45            25ÿ093 Turkoise flower.jpg
+
+ Directory of D:\lexicon\HTML\Munamii Webshop\img\Cupcake
+
+2023-12-07  13:42           177ÿ987 Cherry.png
+2023-12-07  13:47           153ÿ053 Sugarcake.png
+               8 File(s)        494ÿ325 bytes
+
+     Total Files Listed:
+              23 File(s)        946ÿ695 bytes
+               0 Dir(s)  1ÿ923ÿ175ÿ063ÿ552 bytes free
