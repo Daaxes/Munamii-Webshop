@@ -39,9 +39,9 @@ function onLoadPage(){
             break;
         case "munamii cakery products":
             showProductAnchor();
-            insertProductCupCakeAnchor();
+            insertCupCakeAnchor();
             showCupCakes();
-            insertProductWeddingCakeAnchor();
+            insertWeddingCakeAnchor();
             showWeddingCakes();
             break;
         case "munamii cakery contacts":
@@ -58,24 +58,24 @@ function showMenu() {
 
 function showProductAnchor(){
     var result = "";
-    result += "<a href='#CupCakes'>CupCakes</a>&emsp;<a href='#Wedding Cakes'>Wedding Cakes</a>";
+    result += "<a href='#CupCakes'>Cup cakes</a>&emsp;<a href='#WeddingCakes'>Wedding cakes</a>";
     document.getElementById("productAnchorId").innerHTML = result;
 }
 
-function insertProductCupCakeAnchor(){
+function insertCupCakeAnchor(){
   var result = "";
-  result += "<h1 id='CupCake'>CupCake</h1>";
+  result += "<h1 id='CupCakes'>Cup cake</h1>";
 //    result += "<h1>" + anchorcategory + "</h1>";
 //alert(result);
-    document.getElementById("mainProductCupCakeAnchorId").innerHTML = result;
+    document.getElementById("cupCakeAnchorId").innerHTML = result;
 }
 
-function insertProductWeddingCakeAnchor(anchorcategory){
+function insertWeddingCakeAnchor(){
   var result = "";
-  result += "<h1 id='Wedding Cake'>Wedding cake</h1>";
+  result += "<h1 id='WeddingCakes'>Wedding cake</h1>";
 //    result += "<h1>" + anchorcategory + "</h1>";
 //alert(result);
-    document.getElementById("mainProductWeddingCakeAnchorId").innerHTML = result;
+    document.getElementById("weddingCakeAnchorId").innerHTML = result;
 }
 
 function showCupCakes(){

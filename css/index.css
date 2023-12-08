@@ -192,7 +192,70 @@
     
     }
 
-    .mainProductAnchor{
+    .mainProd{
+        top: 230px;
+        left: 0px;
+        right: 0px;
+        bottom: 100px;
+        background-color: aqua;
+        z-index: 30;
+        position:relative;
+        bottom: inherit  footer;
+        
+    }
+
+    .cakesAnchor-container {
+        font-family: 'Lexend', sans-serif;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: larger;
+        text-align: center;
+        color: #050505;
+        position: fixed;
+        z-index: 20;
+    }
+/*
+    .cakesAnchor-container > .cupCakesAnchor{
+        top: 140px;
+        left: 100px;
+        width:80%;
+        height: 50px;
+    }
+*/
+    .cupCakesAnchor{
+        top: 0px;
+        left: 100px;
+        width:80%;
+        height: 50px;
+        font-family: 'Lexend', sans-serif;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: larger;
+        text-align: center;
+        color: #050505;
+        position: relative;
+        z-index: 20;
+    }
+
+    .weddingCakesAnchor{
+        top: 0px;
+        left: 100px;
+        width:80%;
+        height: 50px;
+        font-family: 'Lexend', sans-serif;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: larger;
+        text-align: center;
+        color: #050505;
+        position: relative;
+        z-index: 20;
+    }
+
+    .ProductCupCakeAnchor{
         /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
         /* border: 5px solid yellow; */
 /*        z-index: 20; */
@@ -226,6 +289,7 @@
         font-family: 'Lexend', sans-serif;
         font-size: 25px;
     }
+
     .cakes-container {
         /* margin-top: 420px; */
         margin-top: 150px;
@@ -234,15 +298,26 @@
         justify-content: center;
         align-items: center;
         /* margin-bottom: 150px; */
-        margin: 0px
+        margin: 20px;
         text-align: center;
     }
   
     .cakes-container > div {
         margin: 10px;
         background-color:beige;
-        
     }
+
+    .prodAfterHeader{
+        margin-top: 120px;
+    }
+
+    .prodBeforeFooter{
+        margin-bottom: 110px;
+    }
+    /* .cakes-container > div {
+        margin: 10px;
+        background-color:beige;
+    } */
 
     .mainProducts > p{
         margin: 3px 0; /* between paragraphs */
