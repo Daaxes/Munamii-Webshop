@@ -193,16 +193,16 @@
     }
 
     .mainProd{
-        top: 230px;
+        top: 53px;
         left: 0px;
         right: 0px;
-        bottom: 100px;
+        /* bottom: 200px;
+        margin-bottom: 200px; */
         background-color: aqua;
-        z-index: 30;
+        z-index: 1;
         position:relative;
-        bottom: inherit  footer;
-        
-    }
+      
+    } 
 
     .cakesAnchor-container {
         font-family: 'Lexend', sans-serif;
@@ -215,6 +215,20 @@
         position: fixed;
         z-index: 20;
     }
+
+    .productAnchor{
+        font-family: 'Lexend', sans-serif;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: larger;
+        text-align: center;
+        top: 120px;
+        width: 100%;
+        z-index: 20;
+        position: fixed;
+    }
+
 /*
     .cakesAnchor-container > .cupCakesAnchor{
         top: 140px;
@@ -224,10 +238,10 @@
     }
 */
     .cupCakesAnchor{
-        top: 0px;
+        top: 12px;
         left: 100px;
         width:80%;
-        height: 50px;
+        height: 80px;
         font-family: 'Lexend', sans-serif;
         justify-content: center;
         align-items: center;
@@ -236,14 +250,14 @@
         text-align: center;
         color: #050505;
         position: relative;
-        z-index: 20;
+        z-index: 0;
     }
 
     .weddingCakesAnchor{
         top: 0px;
         left: 100px;
         width:80%;
-        height: 50px;
+        height: 80px;
         font-family: 'Lexend', sans-serif;
         justify-content: center;
         align-items: center;
@@ -252,7 +266,7 @@
         text-align: center;
         color: #050505;
         position: relative;
-        z-index: 20;
+        z-index:2 0;
     }
 
     .ProductCupCakeAnchor{
