@@ -4,7 +4,7 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 16px;
         margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
+        /* padding: 0px; */
         display: flex;
         flex-direction: column; 
     }
@@ -193,16 +193,30 @@
     }
 
     .mainProd{
-        top: 53px;
-        left: 0px;
+        top: 0px;
+        left: 10px;
         right: 0px;
         /* bottom: 200px;
         margin-bottom: 200px; */
-        background-color: aqua;
-        z-index: 1;
+         z-index: 1;
         position:relative;
       
-    } 
+    }
+    
+    .productAnchor {
+        display: block;
+        text-align: center;
+        font-size: larger;
+        position: fixed;
+        top: 185px;
+        z-index: 20;
+      }
+      
+      .imgAnchorCupcake,
+      .imgAnchorCake {
+        width: 10px;
+        height:120px;
+      }
 
     .cakesAnchor-container {
         font-family: 'Lexend', sans-serif;
@@ -216,27 +230,16 @@
         z-index: 20;
     }
 
-    .productAnchor{
-        font-family: 'Lexend', sans-serif;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: larger;
-        text-align: center;
-        top: 120px;
-        width: 100%;
-        z-index: 20;
-        position: fixed;
+    .imgAnchorCupcake{
+        height: 40px;
+        width: 40px;
     }
 
-/*
-    .cakesAnchor-container > .cupCakesAnchor{
-        top: 140px;
-        left: 100px;
-        width:80%;
-        height: 50px;
+    .imgAnchorCake{
+        height: 40px;
+        width: 40px;
     }
-*/
+
     .cupCakesAnchor{
         top: 12px;
         left: 100px;
@@ -269,10 +272,7 @@
         z-index:2 0;
     }
 
-    .ProductCupCakeAnchor{
-        /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-        /* border: 5px solid yellow; */
-/*        z-index: 20; */
+    /* .ProductCupCakeAnchor{
         font-family: 'Lexend', sans-serif;
         justify-content: center;
         align-items: center;
@@ -288,7 +288,7 @@
         transform: translate(-50%, -50%);
         z-index: 10;
     
-    }
+    } */
     
     .mainProductCategory{
         text-align: center;
@@ -328,10 +328,6 @@
     .prodBeforeFooter{
         margin-bottom: 110px;
     }
-    /* .cakes-container > div {
-        margin: 10px;
-        background-color:beige;
-    } */
 
     .mainProducts > p{
         margin: 3px 0; /* between paragraphs */

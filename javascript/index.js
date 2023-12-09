@@ -22,15 +22,15 @@ const footerLinks = ["<a href='mailto'><img class = 'img-Mail' src='./img/mail.p
                      "<a href='https://www.instagram.com/munamii.cakery/'><img class = 'img-Instagram' src='./img/instagram.png' title='Instagram'></a>"];
 const footerEnds =   "</div>";
 
+window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 167);
+});
 
 function onLoadPage(){
   const screenWidth  = window.screen.width;
   const screenHeight = window.screen.height;
   var Width = "Width: " + screenWidth + " Height: " + screenHeight;
 
-  //  alert(document.title);
-  // alert(cake);
-//  alert(Hscreen.availHeight);
     createHeader();
     createFooter();
 
@@ -39,9 +39,9 @@ function onLoadPage(){
             break;
         case "munamii cakery products":
             showProductAnchor();
-            insertCupCakeAnchor();
+             insertCupCakeAnchor();
             showCupCakes();
-            insertWeddingCakeAnchor();
+             insertWeddingCakeAnchor();
             showWeddingCakes();
             break;
         case "munamii cakery contacts":
@@ -52,34 +52,35 @@ function onLoadPage(){
 }
 
 function showMenu() {
-        document.getElementById("myDropdown").classList.toggle("show");
-        document.getElementById("imageBox").innerHTML = menuIconActive;
+    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("imageBox").innerHTML = menuIconActive;
 }
+
+
+
 
 function showProductAnchor(){
     var result = "";
-    result += "<a href='#CupCakes'>Cup cakes</a>&emsp;<a href='#WeddingCakes'>Wedding cakes</a>";
+    result += "<a href='#Cupcakes'><img class = 'imgAnchorCupcake' src='./img/cupcakes/Choklate.jpg' title='Cupcakes'></a><br>";
+    result += "<a href='#Weddingcakes'><img class = 'imgAnchorCake' src='./img/cakes/Belen.jpg' title='Cakes'></img></a>";
     document.getElementById("productAnchorId").innerHTML = result;
 }
 
 function insertCupCakeAnchor(){
-  var result = "";
-  result += "<h1 id='CupCakes'>Cup cake</h1>";
-//    result += "<h1>" + anchorcategory + "</h1>";
-//alert(result);
+    var result = "";
+    result += "<h1 id='Cupcakes'>Cupcake</h1>";
     document.getElementById("cupCakeAnchorId").innerHTML = result;
 }
 
 function insertWeddingCakeAnchor(){
-  var result = "";
-  result += "<h1 id='WeddingCakes'>Wedding cake</h1>";
-//    result += "<h1>" + anchorcategory + "</h1>";
-//alert(result);
+    var result = "";
+    result += "<h1 id='Weddingcakes'>Wedding cakes</h1>";
     document.getElementById("weddingCakeAnchorId").innerHTML = result;
 }
 
 function showCupCakes(){
     var result = "";
+
     cupCakes.forEach((element) => {
         result += element.generateHtml();
     });
@@ -102,7 +103,6 @@ function ShowTheProduct(){
 
 }
 
-  // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
     if (!event.target.matches('.menuMouseOver')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
