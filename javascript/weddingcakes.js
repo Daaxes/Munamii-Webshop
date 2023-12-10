@@ -7,34 +7,35 @@ const weddingCakes = [
       description: "Description",
       generateHtml: function() {
           return "<div class = 'productClass' Id = '" + this.Id + "' onclick='ShowTheProduct()'><img src='" + this.file + "' title = '" + this.name + "'><p>" + this.name + "</p><p>" + this.price + "&euro;</p></div>";
-    }},
-    {
-      Id: "Cake2",
-      name: "Gabriela cake",
-      file: "./img/cakes/Gabriela.jpg",
-      price: 290,
-      description: "Description",
-      generateHtml: function() {
-          return "<div class = 'productClass' Id = '" + this.Id + "' onclick='ShowTheProduct()'><img src='" + this.file + "' title = '" + this.name + "'><p>" + this.name + "</p><p>" + this.price + "&euro;</p></div>";
-    }},  
-    {
-      Id: "Cake3",
-      name: "Green leafs cake",
-      file: "./img/cakes/Green leafs.jpg",
-      price: 320,
-      description: "Description",
-      generateHtml: function() {
-          return "<div class = 'productClass' Id = '" + this.Id + "' onclick='ShowTheProduct()'><img src='" + this.file + "' title = '" + this.name + "'><p>" + this.name + "</p><p>" + this.price + "&euro;</p></div>";
-    }},  
-    {
-      Id: "Cake4",
-      name: "Belén cake",
-      file: "./img/cakes/Belen.jpg",
-      price: 420,
-      description: "Description",
-      generateHtml: function() {
-          return "<div class = 'productClass' Id = '" + this.Id + "' onclick='ShowTheProduct()'><img src='" + this.file + "' title = '" + this.name + "'><p>" + this.name + "</p><p>" + this.price + "&euro;</p></div>";
-    }},  
+    }}
+    //,
+    // {
+    //   Id: "Cake2",
+    //   name: "Gabriela cake",
+    //   file: "./img/cakes/Gabriela.jpg",
+    //   price: 290,
+    //   description: "Description",
+    //   generateHtml: function() {
+    //       return "<div class = 'productClass' Id = '" + this.Id + "' onclick='ShowTheProduct()'><img src='" + this.file + "' title = '" + this.name + "'><p>" + this.name + "</p><p>" + this.price + "&euro;</p></div>";
+    // }},  
+    // {
+    //   Id: "Cake3",
+    //   name: "Green leafs cake",
+    //   file: "./img/cakes/Green leafs.jpg",
+    //   price: 320,
+    //   description: "Description",
+    //   generateHtml: function() {
+    //       return "<div class = 'productClass' Id = '" + this.Id + "' onclick='ShowTheProduct()'><img src='" + this.file + "' title = '" + this.name + "'><p>" + this.name + "</p><p>" + this.price + "&euro;</p></div>";
+    // }},  
+    // {
+    //   Id: "Cake4",
+    //   name: "Belen cake",
+    //   file: "./img/cakes/Belen.jpg",
+    //   price: 420,
+    //   description: "Description",
+    //   generateHtml: function() {
+    //       return "<div class = 'productClass' Id = '" + this.Id + "' onclick='ShowTheProduct()'><img src='" + this.file + "' title = '" + this.name + "'><p>" + this.name + "</p><p>" + this.price + "&euro;</p></div>";
+    // }},  
   //   {
   //     Id: "Cake5",
   //     name: "Mr and Mrs cake",
