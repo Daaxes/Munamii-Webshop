@@ -152,12 +152,12 @@
 
     
     .mainText{
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Lexend', sans-serif;
         font-size: larger;
         text-align: center;
         color: #050505;
         position: absolute;
-        top: 230px;
+        top: 65px;
         left: 50%;
         width:80%;
         transform: translate(-50%, -50%);
@@ -165,7 +165,7 @@
     }
 
     .mainAboutUsText{
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Lexend', sans-serif;
         font-size: xx-large;
         text-align: center;
         color: #050505;
@@ -272,25 +272,7 @@
         position: relative;
         z-index:2 0;
     }
-
-    /* .ProductCupCakeAnchor{
-        font-family: 'Lexend', sans-serif;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: larger;
-        text-align: center;
-        color: #050505;
-        position: fixed;
-        top: 140px;
-        left: 50%;
-        width:80%;
-        height: 50px;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-    
-    } */
-    
+   
     .mainProductCategory{
         text-align: center;
         position: relative;
@@ -342,9 +324,8 @@
         text-align: center;
         height: 300px;
         width: 50%; /* Set both width and height to the same value for a perfect circle */
-        border-radius: 50%;
         background: #ffdaba;
-        margin-top: 30px;
+        margin-top: 130px;
         margin-left: 25%; /* Adjust as needed */
         z-index: 10;
     }
@@ -359,7 +340,7 @@
         background-color:#ffdaba;
         padding: 2em;
         left: 50%;
-        top: 59%;
+        top: 65%;
         transform: translate(-50%, -50%);
     }
 
@@ -406,7 +387,7 @@
             font-size: 18px;
         }
         .dropdown-content a{
-            font-size: 40px;
+            font-size: 16px;
        }
         .headerText{
             font-size: 40px;
@@ -420,7 +401,7 @@
     /* Styles for screens with a minimum width of 1025px (e.g., desktop computers) */
     @media screen and (min-width: 1025px) {
         .dropdown-content a{
-            font-size: 20px;
+            font-size: 16px;
         }
         
         body {
