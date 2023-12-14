@@ -93,7 +93,7 @@
         background-color: #ffdaba;
         height: 165px;
         width: 100%;
-        border: 3px solid #050505;
+        /* border: 3px solid #050505; */
         z-index: 10;
         position: fixed;
         opacity: 100%;
@@ -106,7 +106,7 @@
         height: 100px;
         position: fixed;
         bottom: 0px;
-        border-top: solid black 1px;
+        /* border-top: solid black 1px; */
         text-align: center;
         opacity: 100%;
         z-index: 2;
