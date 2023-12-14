@@ -1,20 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');    
-    
+ @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');    /*import google font Lexend */
+/* CSS for responsive design*/
     body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Lexend', sans-serif;
         font-size: 16px;
-        margin: 0; /* Remove default margin */
-        /* padding: 0px; */
+        margin: 0;
         display: flex;
         flex-direction: column; 
     }
-
-    /* div{
-        border: 5px solid black;
-    }
-    .h1{
-    } */
-
+    
+    /* Header and menu bar styling */
     img.logo{
         max-width: 140px;
         height: auto;
@@ -22,40 +16,37 @@
         border-radius: 50%;
         margin-top: 1%;
         margin-left: 1%
-        }
+    }
     
-        img.menu {
-            right: 20px;
-            top: 20px;
-            position: absolute; 
-        }
+    img.menu {
+        right: 20px;
+        top: 20px;
+        position: absolute; 
+    }
 
-        img.menuMouseOver {
-             right: 20px;
-            top: 20px;
-            position: absolute; 
-        }
-    /* not working */
-        .img{
-            max-width: 20px
-        }
+    img.menuMouseOver {
+        right: 20px;
+        top: 20px;
+        position: absolute; 
+    }
+ 
     .imageBox {
-            right: 10px;
-            top: 32px;
-            position: absolute;
-            float: left;
-        }
+        right: 10px;
+        top: 32px;
+        position: absolute;
+        float: left;
+    }
     
     .imageBox .menuMouseOver{
-            position: absolute; 
-            right: 20px;
-            top: 20px;
-            display: none;
-        }
+        position: absolute; 
+        right: 20px;
+        top: 20px;
+        display: none;
+    }
     
     .imageBox:hover .menuMouseOver {
-            display: block;
-        }
+        display: block;
+    }
     
     /* Dropdown menu */
     .dropdown {
@@ -76,7 +67,6 @@
     }
     
     .dropdown-content a {
-        font-family: Arial, Helvetica, sans-serif;
         font-size: medium;
         color: black;
         padding: 12px 16px;
@@ -91,18 +81,16 @@
     
     .show {display: block;}
 
+    /* Style for header */
     header {
         position: relative;
         width: 100%;
-        text-align: center; /* Center items vertically */
-        overflow: hidden; /* Clear the floats inside the header */
+        text-align: center; 
+        overflow: hidden; 
     }
 
     .header{
         background-color: #ffdaba;
-        /* background-color: #f7f8e7; */
-        /* background-color: #FFB777; */
-        /* background-color: #3aa58e; */
         height: 165px;
         width: 100%;
         border: 3px solid #050505;
@@ -110,23 +98,10 @@
         position: fixed;
         opacity: 100%;
     }
-
-    /*    overflow: hidden; Clear the floats inside the header*/
-
-    .headerText{
-        left: 80px;
-        top: 65px;
-        padding: 5px 7% 0% 7%;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 40px;
-        font-weight: bold;
-        position:fixed;
-    }
-
+    
+    /* Style for Footer */
     .footer{
         background-color: #ffdaba;
-        /* background-color: #3aa58e; */
-        font-family:cursive;
         width: 100%;
         height: 100px;
         position: fixed;
@@ -136,24 +111,18 @@
         opacity: 100%;
         z-index: 2;
         left: 0px;
-
     }
-
+    
+    /* Main content styling */
     .main{
         position: fixed;
         top: 167px;
         left: 0px;
         right: 0px;
         bottom: 110px;
-        /* border: 5px solid yellow; */
-        /* z-index: 10; */
     }
- 
-
     
     .mainText{
-        font-family: 'Lexend', sans-serif;
-        font-size: larger;
         text-align: center;
         color: #050505;
         position: absolute;
@@ -164,32 +133,40 @@
         z-index: 10;
     }
 
-    .mainAboutUsText{
-        font-family: 'Lexend', sans-serif;
-        font-size: xx-large;
+    .mainAboutText{
         text-align: center;
         color: #050505;
         position: absolute;
-        top: 310px;
+        top: 50%;
         left: 50%;
-        width:80%;
+        width:45%;
         transform: translate(-50%, -50%);
         z-index: 10;
     }
 
-
     .mainContacts{
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: xx-large;
         text-align: center;
         color: #050505;
         position: absolute;
-        top: 350px;
+        top: 50%;
         left: 50%;
         width:80%;
         transform: translate(-50%, -50%);
         z-index: 10;
     
+    }
+
+    .mainProductCategory{
+        text-align: center;
+        position: relative;
+        top: 165px;
+        left: 0;
+        width: 100%;
+    }
+    
+    .mainProductCategory > h1{
+        font-family: 'Lexend', sans-serif;
+        font-size: 25px;
     }
 
     .mainProd{
@@ -197,13 +174,12 @@
         top: 0px;
         left: 10px;
         right: 0px;
-        /* bottom: 200px;
-        margin-bottom: 200px; */
-         z-index: 1;
+        z-index: 1;
         position:relative;
       
     }
-    
+
+    /* Style for product side with anchor */
     .productAnchor {
         display: block;
         text-align: center;
@@ -273,20 +249,6 @@
         z-index:2 0;
     }
    
-    .mainProductCategory{
-        text-align: center;
-        position: relative;
-        top: 165px;
-        left: 0;
-        width: 100%;
-        /* height: 100%; */
-    }
-
-    .mainProductCategory > h1{
-        font-family: 'Lexend', sans-serif;
-        font-size: 25px;
-    }
-
     .cakes-container {
         /* margin-top: 420px; */
         margin-top: 150px;
@@ -316,25 +278,9 @@
         margin: 3px 0; /* between paragraphs */
     }
 
-    .circle-with-text {
-        position: fixed;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        height: 300px;
-        width: 50%; /* Set both width and height to the same value for a perfect circle */
-        background: #ffdaba;
-        margin-top: 130px;
-        margin-left: 25%; /* Adjust as needed */
-        z-index: 10;
-    }
-    
+    /* Style for gabriela weddingcake on index side (Home)*/
     .img-Gabriella{
         position:fixed;
-        /* max-width: 100%;
-        max-height: 100%;*/
-        /* width: 30%; */
         height: 30%; 
         border-radius: 50%;
         background-color:#ffdaba;
@@ -344,10 +290,7 @@
         transform: translate(-50%, -50%);
     }
 
-    /* .imgProductGabriela{
-        width: 20%;
-    } */
-
+    /* Imagebox div for social media idons in the footer */
     .imgbox-SocialMedia{
         position: absolute;
         top: 50%;
@@ -355,6 +298,7 @@
         transform: translate(-50%, -50%);
       }
 
+    /* Images of social media */
     .img-Mail{
         margin-right: 30px;
     }
@@ -368,6 +312,7 @@
     .imgbox-Gabriella{
     } 
  
+    /* Style for footer */
     .foot {
         width: 100%;
         height: 40px;
@@ -381,39 +326,48 @@
         left: 0px;
     }
 
-    /* Styles for screens with a minimum width of 601px and a maximum width of 1024px (e.g., tablets) */
-    @media screen and (min-width: 601px) and (max-width: 1024px) {
-        body {
-            font-size: 18px;
-        }
-        .dropdown-content a{
-            font-size: 16px;
-       }
-        .headerText{
-            font-size: 40px;
-        }
-        h2{
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-
+/* Styles for screens with a minimum width of 1025px (e.g., desktop computers) */
+@media screen and (min-width: 1025px) {
+    .dropdown-content a{
+        font-size: 16px;
     }
-    /* Styles for screens with a minimum width of 1025px (e.g., desktop computers) */
-    @media screen and (min-width: 1025px) {
-        .dropdown-content a{
-            font-size: 16px;
-        }
-        
-        body {
-            font-size: 20px;
-        }
-
-        .img-Mail{
-            width: 200;
-        }
+    
+    body {
+        font-size: 20px;
     }
 
-    /* Styles for screens with a maximum width of 600px (e.g., mobile devices) */
+    .img-Mail{
+        width: 200;
+    }
+}
+
+/* Styles for screens with a minimum width of 601px and a maximum width of 1024px (e.g., tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+    .dropdown-content a{
+        font-size: 16px;
+   }
+    /* .headerText{
+        font-size: 40px;
+    } */
+
+    .mainContacts{
+        width: 90%;
+    }
+
+    .mainAboutText{
+        width: 90%;
+    }
+
+    h2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+/* Styles for screens with a maximum width of 600px (e.g., mobile devices) */
     @media screen and (max-width: 600px) {
         body {
             font-size: 18px;
@@ -425,9 +379,17 @@
         .dropdown-content a{
             font-size: 20px;
        }
-        .headerText{
+        /* .headerText{
             font-size: 40px;
+        } */
+        .mainContacts{
+            width: 100%;
         }
+
+        .mainAboutText{
+            width: 100%;
+        }
+    
         h2{
             margin-top: 5px;
             margin-bottom: 5px;

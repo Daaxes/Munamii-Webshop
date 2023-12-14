@@ -1,10 +1,12 @@
-const cupCakes = [
+    // Additional cupcake objects with similar structure, used to get buy function working but arent there yet
+    const cupCakes = [
     {
       Id: "CupCake1",
       name: "Choklate cupcake",
       file: "./img/cupcakes/Choklate.jpg",
       price: 10,
       description: "Description",
+      // return html code used for showing cupcakes under product.html
       generateHtml: function() {
           return "<div class = 'productClass' Id = '" + this.Id + "' onclick='ShowTheProduct()'><img src='" + this.file + "' title = '" + this.name + "'><p>" + this.name + "</p><p>" + this.price + "&euro;</p></div>";
       }},

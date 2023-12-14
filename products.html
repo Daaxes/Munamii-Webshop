@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Munamii cakery products</title>
+    <!-- Title and stylesheet -->
+    <title>Munamii cakery products</title>
         <link rel="stylesheet" href="./css/index.css">
     </head>
-
+<!-- Create side from javascript on which htmlside is loaded [onLoadPage() ]-->
 <body onload="onLoadPage()">
+    <!-- Menu bar and header loaded from javascript-->
     <div class="menuBar" id="menuBarId">
     </div>
 
@@ -13,15 +15,12 @@
     </div>
     <div class="prodAfterHeader">
     </div>
+    <!-- Main content -->
     <main class="mainProd">
-        <!-- Done -->
         <div class="productAnchor" id="productAnchorId">
         </div>
 
-        <!-- <div class="mainProductCategory" id="mainProductCupCakeAnchorId"> -->
-            <p class="cupCakesAnchor" id="cupCakeAnchorId"></p>
-            <!-- <div class="cupCakesAnchor" id="cupCakeAnchorId">
-            </div> -->
+        <p class="cupCakesAnchor" id="cupCakeAnchorId"></p>
         
         <p class = "cakes-container" id = "mainProductCupCakesId"></p>
         
@@ -34,10 +33,11 @@
         </div>
     </main>
     
+    <!-- Footer loaded from javascript-->
     <div class="footer" id="footerId">
     </div>
-    
-
+ 
+    <!-- JavaScript files -->
     <script src="./javascript/cupcakes.js"></script>    
     <script src="./javascript/weddingcakes.js"></script>    
     <script src="./javascript/index.js"></script>    
